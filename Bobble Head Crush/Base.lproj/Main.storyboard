@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A278b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Bobble_Head_Crush" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
+                    </layoutGuides>
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SPh-kO-npc">
+                                <rect key="frame" x="28" y="40" width="544" height="52"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kxC-ab-TLD">
+                                        <rect key="frame" x="0.0" y="0.0" width="182" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yug-RG-t9s">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="21"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clb-Il-O3h">
+                                                <rect key="frame" x="0.0" y="21" width="182" height="31"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4tf-he-E3r">
+                                        <rect key="frame" x="182" y="0.0" width="181" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moves:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spS-wb-5EA">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="21"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKj-IA-vMd">
+                                                <rect key="frame" x="0.0" y="21" width="181" height="31"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rpj-kk-F2M">
+                                        <rect key="frame" x="363" y="0.0" width="182" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mV-hM-UP6">
+                                                <rect key="frame" x="0.0" y="0.0" width="182" height="21"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="999999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5M-vL-2aS">
+                                                <rect key="frame" x="0.0" y="21" width="182" height="31"/>
+                                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="26"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bds-lh-CcM">
+                                <rect key="frame" x="0.0" y="187" width="600" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="QsP-OV-YKl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOb-46-MPy">
+                                <rect key="frame" x="250" y="504" width="100" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="U8q-5a-V6U"/>
+                                    <constraint firstAttribute="height" constant="36" id="hfw-gt-2y2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="28"/>
+                                <size key="titleShadowOffset" width="1" height="2"/>
+                                <state key="normal" title="Shuffle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="rym-92-ZaW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 / 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGc-Dn-dDS">
+                                <rect key="frame" x="491" y="550" width="81" height="33"/>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bds-lh-CcM" firstAttribute="centerY" secondItem="3se-qz-xqx" secondAttribute="centerY" id="66b-LN-yuQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SPh-kO-npc" secondAttribute="trailing" constant="8" id="Eh7-oF-KqV"/>
+                            <constraint firstItem="SPh-kO-npc" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="20" id="GMW-gU-DpK"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="bOb-46-MPy" secondAttribute="bottom" constant="60" id="Ljq-ii-V68"/>
+                            <constraint firstItem="bds-lh-CcM" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="QYe-lQ-mhG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bds-lh-CcM" secondAttribute="trailing" constant="176" id="TT2-RJ-VWz"/>
+                            <constraint firstAttribute="trailing" secondItem="bds-lh-CcM" secondAttribute="trailing" id="WjE-wA-sYo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WGc-Dn-dDS" secondAttribute="trailing" constant="8" id="Yf6-2c-waK"/>
+                            <constraint firstItem="bds-lh-CcM" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" id="b5r-Wt-rj6"/>
+                            <constraint firstItem="SPh-kO-npc" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="8" id="bjq-ly-AcN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bds-lh-CcM" secondAttribute="trailing" id="egh-Ki-odH"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="WGc-Dn-dDS" secondAttribute="bottom" constant="17" id="fjn-qA-IMJ"/>
+                            <constraint firstItem="bOb-46-MPy" firstAttribute="centerX" secondItem="3se-qz-xqx" secondAttribute="centerX" id="nJj-Aq-eef"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TT2-RJ-VWz"/>
+                                <exclude reference="b5r-Wt-rj6"/>
+                                <exclude reference="egh-Ki-odH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="currentLevelLabel" destination="WGc-Dn-dDS" id="iiX-5m-2M0"/>
+                        <outlet property="gameOverPanel" destination="bds-lh-CcM" id="mGC-6c-lkI"/>
+                        <outlet property="movesLabel" destination="aKj-IA-vMd" id="Vxx-ez-Eoy"/>
+                        <outlet property="scoreLabel" destination="o5M-vL-2aS" id="oDy-hL-K9x"/>
+                        <outlet property="shuffleButton" destination="bOb-46-MPy" id="BzX-JS-9BN"/>
+                        <outlet property="targetLabel" destination="clb-Il-O3h" id="G1d-TO-rpi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445" y="300"/>
+        </scene>
+    </scenes>
+</document>
